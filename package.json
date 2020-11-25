@@ -1,0 +1,21 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "ejemplo",
+  "main": "index.js",
+  "dependencies": {
+    "@popperjs/core": "^2.5.4",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "node": "^15.2.1",
+    "node-sass": "^5.0.0",
+    "sass": "^1.29.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css css/"
+  },
+  "author": "JohnGutierrez",
+  "license": "ISC"
+}

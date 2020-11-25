@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Hoteles</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="terminosycondiciones.html">Termino y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Titulo-->
+    <div class="jumbotron">
+        <h1>Hoteles</h1>
+    </div>
+    <!--breadcrumb-->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
+            </ol>
+        </nav>
+        <!--Barra de navegacion tabs-pills-->
+        <ul class="nav nav-pills" id="mytab" role="tabslist">
+            <li class="nav-item"><a class="nav-link active" id="compara-tab" data-toggle="pill"  href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a></li>
+            <li><a class="nav-link" id="tarjetas-tab" data-toggle="pill"  href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="true">Tarjetas</a></li>
+            <li><a class="nav-link" id="comentarios-tab" data-toggle="pill"  href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="true">Comentarios</a></li>
+        </ul>
+        <div class="tab-content" id="mytabcontent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Calidad</th>
+                            <th>Pinamar</th>
+                            <th>Mar de Plata</th>
+                            <th>San Clemente</th>
+                            <th>Santa Teresita</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-star"></span></td>
+                                <td>$100</td>
+                                <td>$120</td>
+                                <td>$150</td>
+                                <td>$180</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$200</td>
+                                <td>$220</td>
+                                <td>$250</td>
+                                <td>$280</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$300</td>
+                                <td>$320</td>
+                                <td>$350</td>
+                                <td>$380</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$400</td>
+                                <td>$420</td>
+                                <td>$450</td>
+                                <td>$480</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>$500</td>
+                                <td>$520</td>
+                                <td>$550</td>
+                                <td>$580</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <!--Accordion-->
+                <div class="accordion" id="accordiontarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">Tarjeta Básica</button>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordiontarjetas">
+                    <div class="card-body">
+                        Podes reservar hastas 3 cuotas sin interés
+                    </div>
+                </div>
+                
+                <div class="accordion" id="accordiontarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseVIP" aria-expanded="false" aria-controls="collapseBasica">Tarjeta VIP</button>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" data-parent="#accordiontarjetas">
+                    <div class="card-body">
+                        Podes reservar hastas 6 cuotas sin interés<br>
+                        Al llegar recibiras una canasta de obsequios para disfrutar con tu familia
+                    </div>
+                </div>
+                <div class="accordion" id="accordiontarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBlack" aria-expanded="false" aria-controls="collapseBasica">Tarjeta Black</button>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseBlack" class="collapse" aria-labelledby="headingThree" data-parent="#accordiontarjetas">
+                    <div class="card-body">
+                        Podes reservar hastas 6 cuotas sin interés<br>
+                        Al llegar recibiras una canasta de obsequios para disfrutar con tu familia
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+        </div>
+
+    <!--Footer-->
+    <div class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-sm-4 d-flex flex-column">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="col-sm-4">
+                    <address>
+                        <h3>Principal</h3>
+                        <p>Cundinamarca - Colombia</p>
+                        <p><span class="oi oi-home footer-address-icon"></span>  Calle 3a #6 - 89 Sur, Keranta gran camino</p>
+                        <p><span class="oi oi-phone footer-address-icon"></span> +57 304 462 0689</p>
+                        <p><span class="oi oi-inbox footer-address-icon"></span> Carolaymontanoperez@gmail.com</p>
+                    </address>
+                </div>
+                <div class="col-sm-4 d-flex flex-column align-items-end">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="precios.html">Precios</a>
+                    <a href="terminosycondiciones.html">Terminos y condiciones</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--JQuery-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!--Popper-->
+    <script src="node_modules/@popperjs/core/dist/esm/popper.js"></script>
+    <!--Js Bootstrap-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.jumbotron{
+    background-color: yellow;
+    color: black;
+    margin-top: 50px;
+}
+footer{
+    padding: 10px 10px 0 px 10px;
+    background-color: yellow;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.card-hotel{
+    flex: 1 200px;
+    padding: 2px 0px 2px 0px;
+    margin-top: 10px;
+}
+.btn-reserva{
+    width: 100%;
+}
+.fila {
+    border: 3px solid blue;
+    background-color: lightblue; /*height: 180px;*/
+    margin-bottom: 15px;
+    height: 180px;
+}
+.footer-address-icon{
+    padding-right: 10px;
+}
+.tab-content{
+    padding-top: 10px;
+}
